@@ -12,12 +12,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log("ok");
+
   
   return (
     <html lang="en">
-      <body>
+      <body className="container mx-auto">
+        <main className="flex flex-col justify-between min-h-screen ">
+          <header >hello</header>
         {children}
+        </main>
       </body>
     </html>
   );
